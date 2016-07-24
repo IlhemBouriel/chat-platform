@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+@if ($msg == '')
+@else
+{{ $msg }}
+@endif
+<form method="POST" action="{{ URL::to('index') }}">
+<label for="email">Email:</label>
+@if ($email == '')
+<input type="email" name="email" required></br>
+@else
+<input type="email" name="email" required value="{{ $email }}"></br>
+@endif
+	<label for="password">Password:</label>
+	@if ($pass == '')
+<input type="password" name="password" required></br>
+@else
+<input type="password" name="password" required value="{{ $pass }}"></br>
+@endif
+	<input type="hidden" name="_token" value="{{ csrf_token() }}">
+	<input type="submit" value="connect"></form>
+</body>
+</html>
