@@ -33,7 +33,6 @@
 				
             </header>
             <section>			
-	<h2>hhhhhhhhhhh</h2>
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>
